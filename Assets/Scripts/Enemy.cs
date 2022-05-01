@@ -5,17 +5,22 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public int health;
+    [SerializeField] int incrementScore;
 
     private void Update()
     {
-        if (health <= 0)
-        {
-            Destroy(gameObject);
-        }
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(int damage, bool fromPlayer)
     {
         health -= damage;
+        if(health <= 0)
+        {
+            if(fromPlayer)
+            {
+                GameObject.FindGameObjectWithTag("TowerHolder").GetComponent<Health>().currentScore += incrementScore;
+            }
+            Destroy(gameObject);
+        }
     }
 }

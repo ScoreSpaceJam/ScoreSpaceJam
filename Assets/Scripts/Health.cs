@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class Health : MonoBehaviour
 {
     #region Private Variables
 
     bool isDead = false;
-    float currentScore = 0;
+    public float currentScore = 0;
 
     public ScoreManager scoreManager;
     public ScoreUi scoreUi;
@@ -22,6 +23,7 @@ public class Health : MonoBehaviour
 
     [SerializeField] Image healthBarImage;
     [SerializeField] GameObject HighscorePanel;
+    [SerializeField] TextMeshProUGUI score;
 
     [Header("Player Health Settings")]
 
@@ -34,6 +36,7 @@ public class Health : MonoBehaviour
 
     private void Start()
     {
+        Time.timeScale = 1;
         HighscorePanel.SetActive(false);
         //scoreUi.UpdateHighScoreUI();
         currentHealth = maxHealth;
@@ -44,6 +47,8 @@ public class Health : MonoBehaviour
         healthBarImage.fillAmount = currentHealth / maxHealth;
         CheckDeath();
         DebugScore();
+
+        score.text = currentScore.ToString();
     }
 
     void DebugScore()
@@ -59,6 +64,7 @@ public class Health : MonoBehaviour
         if(!isDead && Input.GetKeyDown(KeyCode.Escape)) 
         {
             currentHealth = 0;
+            Time.timeScale = 0;
         }
         else if(isDead && Input.GetKeyDown(KeyCode.Escape))
         {
