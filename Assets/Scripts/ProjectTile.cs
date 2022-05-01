@@ -28,7 +28,7 @@ public class ProjectTile : MonoBehaviour
             DestroyProjectile();
         }
 
-        transform.Translate(transform.up * speed * Time.deltaTime);
+        transform.Translate(Vector2.right * speed * Time.deltaTime);
     }
 
     void DestroyProjectile()

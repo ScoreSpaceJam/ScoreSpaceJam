@@ -37,4 +37,5 @@ public class FlyingEnemy : MonoBehaviour
         //In death sec instead of destroying the object we need to unactivate the enemy and reseting its health...
         gameObject.SetActive(false);
     }
+
 }
