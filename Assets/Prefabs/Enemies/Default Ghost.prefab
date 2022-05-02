@@ -120,7 +120,9 @@ MonoBehaviour:
   healthDeduct: 1
   maxHealth: 1
   moveSpeed: 2
-  waitForDeath: 2
+  maxMoveSpeed: 1
+  minMoveSpeed: 5
+  waitForDeath: 0
   effect: {fileID: 4583727668942281962, guid: ed7ab74a2b007ce4593754149c5a3290, type: 3}
 --- !u!58 &9093699201912076757
 CircleCollider2D:

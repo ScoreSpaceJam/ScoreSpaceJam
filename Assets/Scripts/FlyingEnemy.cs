@@ -14,6 +14,8 @@ public class FlyingEnemy : MonoBehaviour
     GameObject[] towers;
     Vector3 finalLocation;
     [SerializeField] float moveSpeed;
+    [SerializeField] float maxMoveSpeed;
+    [SerializeField] float minMoveSpeed;
 
     float timer;
     [SerializeField] float waitForDeath = 1;
@@ -23,6 +25,7 @@ public class FlyingEnemy : MonoBehaviour
 
     void Start()
     {
+        moveSpeed = Random.Range(minMoveSpeed, maxMoveSpeed);
         Health = maxHealth;
         towers = GameObject.FindGameObjectsWithTag("Tower");
         finalLocation = towers[Random.Range(0, towers.Length)].transform.position;
@@ -44,6 +47,7 @@ public class FlyingEnemy : MonoBehaviour
     
     void Death()
     {
+        CMShakeScript.Instance.CameraShake(1, 0.2f);
         GameObject.FindGameObjectWithTag("TowerHolder").GetComponent<Health>().currentHealth -= healthDeduct;
         gameObject.SetActive(false);
     }
@@ -57,6 +61,7 @@ public class FlyingEnemy : MonoBehaviour
             Health -= 1;
             if(Health <= 0)
             {
+                CMShakeScript.Instance.CameraShake(1, 0.2f);
                 Health = maxHealth;
                // deathSound.Play();
                 Instantiate(effect, transform.position, Quaternion.identity);

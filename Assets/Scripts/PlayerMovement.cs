@@ -132,6 +132,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+        moveInput = Input.GetAxis("Horizontal");
+
         if (isGrounded == true)
         {
             glideCheck = true;
@@ -144,7 +146,7 @@ public class PlayerMovement : MonoBehaviour
             JumpMechanism();
         }
 
-        if (canGlide)
+        /*if (canGlide)
         {
             GlideMechanics();
         }
@@ -157,7 +159,7 @@ public class PlayerMovement : MonoBehaviour
         if (canDash)
         {
             DashMechanism();
-        }
+        }*/
     }
 
     private void FixedUpdate()
@@ -180,7 +182,7 @@ public class PlayerMovement : MonoBehaviour
 
     void PlayerMove()
     {
-        moveInput = Input.GetAxis("Horizontal");
+        
         playerRigidBody.velocity = new Vector2(moveInput * moveSpeed, playerRigidBody.velocity.y);
 
         PlayerWalk.SetFloat("Speed", Mathf.Abs(moveInput));

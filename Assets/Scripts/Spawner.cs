@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
+    bool canIncRate = true;
+
     [Header("Flying Enemies Spawnpoints")]
     [SerializeField] Transform[] spawnPoints;
 
@@ -13,14 +15,44 @@ public class Spawner : MonoBehaviour
     float timer;
     [SerializeField] float rateOfSpawn;
 
+    float uniTimer;
+    [SerializeField] float incRateAfter = 30;
+
     void Start()
     {
     }
 
     void Update()
     {
+        SpawningTimer();
+
+        if(canIncRate)
+        {
+            RateIncreaser();
+        }
+    }
+
+    void RateIncreaser()
+    {
+        uniTimer += Time.deltaTime;
+        if(uniTimer > incRateAfter)
+        {
+            rateOfSpawn -= 0.2f;
+
+            if(rateOfSpawn <= 0)
+            {
+                rateOfSpawn = 0.1f;
+                canIncRate = false;
+            }
+
+            uniTimer = 0;
+        }
+    }
+
+    void SpawningTimer()
+    {
         timer += Time.deltaTime;
-        if(timer > rateOfSpawn)
+        if (timer > rateOfSpawn)
         {
             InstanciatingEnemy();
             timer = 0;
