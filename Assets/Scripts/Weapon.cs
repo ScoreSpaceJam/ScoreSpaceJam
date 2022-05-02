@@ -7,7 +7,8 @@ public class Weapon : MonoBehaviour
     public float offset;
     public GameObject projectile;
     public Transform shotpoint;
-
+    public AudioSource shootSound;
+   
     private float timeBtwShots;
     public float startTimeBtwShots;
     private void Update()
@@ -21,6 +22,7 @@ public class Weapon : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 Instantiate(projectile, shotpoint.position, transform.rotation);
+                shootSound.Play();
                 timeBtwShots = startTimeBtwShots;
             }
         }

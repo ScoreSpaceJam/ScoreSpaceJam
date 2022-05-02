@@ -88,10 +88,15 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     float moveSpeed;
 
+    public Animator PlayerWalk;
+
     [Header("Player Jump Settings")]
 
     [SerializeField]
     float playerJumpForce;
+
+    public Animator Jump;
+    public AudioSource jumpSound;
 
     [SerializeField]
     int extraJumps;
@@ -104,6 +109,8 @@ public class PlayerMovement : MonoBehaviour
     [Header("Player Dash Settings")]
     [SerializeField]
     float dashPower = 14f;
+
+    //public Animator dash;
 
     [SerializeField]
     float dashTime = 0.5f;
@@ -171,7 +178,6 @@ public class PlayerMovement : MonoBehaviour
 
     #region Movement Mechanics
 
-    public Animator PlayerWalk;
     void PlayerMove()
     {
         moveInput = Input.GetAxis("Horizontal");
@@ -199,11 +205,16 @@ public class PlayerMovement : MonoBehaviour
         {
             playerRigidBody.velocity = playerJumpForce * Vector2.up;
             jumps--;
+            Debug.Log("Air Jump");
         }
-
-        else if (Input.GetKeyUp(JumpKey) && jumps == 0 && isGrounded == true)
-        {
+       // else if (Input.GetKeyUp(JumpKey) && jumps == 0 && isGrounded == true)
+        else if (Input.GetKeyUp(JumpKey) && jumps == 0 )
+        { 
             playerRigidBody.velocity = playerJumpForce * Vector2.up;
+            jumps = 1;
+            jumpSound.Play();
+            Debug.Log("Jump");
+            
         }
     }
 
