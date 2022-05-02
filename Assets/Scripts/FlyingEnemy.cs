@@ -5,6 +5,12 @@ using UnityEngine;
 
 public class FlyingEnemy : MonoBehaviour
 {
+    [SerializeField] float addScore = 1;
+    [SerializeField] float healthDeduct = 1;
+
+    [SerializeField] int maxHealth = 1;
+    int Health = 1;
+
     GameObject[] towers;
     Vector3 finalLocation;
     [SerializeField] float moveSpeed;
@@ -14,6 +20,7 @@ public class FlyingEnemy : MonoBehaviour
 
     void Start()
     {
+        Health = maxHealth;
         towers = GameObject.FindGameObjectsWithTag("Tower");
         finalLocation = towers[Random.Range(0, towers.Length)].transform.position;
     }
@@ -34,8 +41,23 @@ public class FlyingEnemy : MonoBehaviour
     
     void Death()
     {
-        //In death sec instead of destroying the object we need to unactivate the enemy and reseting its health...
+        GameObject.FindGameObjectWithTag("TowerHolder").GetComponent<Health>().currentHealth -= healthDeduct;
         gameObject.SetActive(false);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "Bullet")
+        {
+            GameObject.FindGameObjectWithTag("TowerHolder").GetComponent<Health>().currentScore += addScore;
+            Debug.Log("Collision");
+            Health -= 1;
+            if(Health <= 0)
+            {
+                Health = maxHealth;
+                gameObject.SetActive(false);
+            }
+        }
     }
 
 }

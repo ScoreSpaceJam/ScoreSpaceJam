@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1427997435867805877}
   - component: {fileID: 4464134927309318513}
   - component: {fileID: 7117872734876408695}
+  - component: {fileID: 7329738373150052986}
   m_Layer: 0
   m_Name: crow_0
   m_TagString: Untagged
@@ -115,5 +116,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1193bd1dc903499409b1097099fd8634, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  addScore: 1
+  healthDeduct: 1
+  maxHealth: 1
   moveSpeed: 2
   waitForDeath: 2
+--- !u!58 &7329738373150052986
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4015869921192101081}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.72

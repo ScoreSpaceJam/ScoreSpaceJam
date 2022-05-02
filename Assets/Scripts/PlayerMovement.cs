@@ -208,7 +208,7 @@ public class PlayerMovement : MonoBehaviour
             Debug.Log("Air Jump");
         }
        // else if (Input.GetKeyUp(JumpKey) && jumps == 0 && isGrounded == true)
-        else if (Input.GetKeyUp(JumpKey) && jumps == 0 )
+        else if (Input.GetKeyUp(JumpKey) && jumps == 0)
         { 
             playerRigidBody.velocity = playerJumpForce * Vector2.up;
             jumps = 1;

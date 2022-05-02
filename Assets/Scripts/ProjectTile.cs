@@ -18,7 +18,7 @@ public class ProjectTile : MonoBehaviour
     private void Update()
     {
         RaycastHit2D hitInfo = Physics2D.Raycast(transform.position, transform.up, distance, whatIsSolid);
-        if (hitInfo.collider != null)
+        /*if (hitInfo.collider != null)
         {
             if (hitInfo.collider.CompareTag("Enemy"))
             {
@@ -26,7 +26,7 @@ public class ProjectTile : MonoBehaviour
                 hitInfo.collider.GetComponent<Enemy>().TakeDamage(damage, true);
             }
             DestroyProjectile();
-        }
+        }*/
 
         transform.Translate(Vector2.right * speed * Time.deltaTime);
     }

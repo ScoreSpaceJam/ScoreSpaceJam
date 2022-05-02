@@ -74,7 +74,7 @@ public class Health : MonoBehaviour
         if(currentHealth <= 0 && !isDead)
         {
             isDead = true;
-            
+            Time.timeScale = 0;
             HighscorePanel.SetActive(true);
             //scoreManager.AddScore(new Score("Bob", 100));
             scoreManager.AddScore(new Score(PlayerPrefs.GetString("name"), currentScore));
