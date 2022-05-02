@@ -24,4 +24,5 @@ public class SceneManagement : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+
 }
