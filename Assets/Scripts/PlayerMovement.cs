@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
     float moveInput;
     float glideCurrentTimer;
     float glideDirection;
-
+  
     Vector2 dashingDir;
 
     bool facingRight = true;
@@ -171,10 +171,13 @@ public class PlayerMovement : MonoBehaviour
 
     #region Movement Mechanics
 
+    public Animator PlayerWalk;
     void PlayerMove()
     {
         moveInput = Input.GetAxis("Horizontal");
         playerRigidBody.velocity = new Vector2(moveInput * moveSpeed, playerRigidBody.velocity.y);
+
+        PlayerWalk.SetFloat("Speed", Mathf.Abs(moveInput));
 
         if (facingRight == false && moveInput > 0)
         {
