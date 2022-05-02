@@ -18,6 +18,9 @@ public class FlyingEnemy : MonoBehaviour
     float timer;
     [SerializeField] float waitForDeath = 1;
 
+    public GameObject effect;
+   // public AudioSource deathSound;
+
     void Start()
     {
         Health = maxHealth;
@@ -55,6 +58,8 @@ public class FlyingEnemy : MonoBehaviour
             if(Health <= 0)
             {
                 Health = maxHealth;
+               // deathSound.Play();
+                Instantiate(effect, transform.position, Quaternion.identity);
                 gameObject.SetActive(false);
             }
         }

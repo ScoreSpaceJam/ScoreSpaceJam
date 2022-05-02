@@ -95,7 +95,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     float playerJumpForce;
 
-    public Animator Jump;
+   // public Animator Jump;
     public AudioSource jumpSound;
 
     [SerializeField]
@@ -205,7 +205,7 @@ public class PlayerMovement : MonoBehaviour
         {
             playerRigidBody.velocity = playerJumpForce * Vector2.up;
             jumps--;
-            Debug.Log("Air Jump");
+            //Jump.SetBool("Jump", true);
         }
        // else if (Input.GetKeyUp(JumpKey) && jumps == 0 && isGrounded == true)
         else if (Input.GetKeyUp(JumpKey) && jumps == 0)

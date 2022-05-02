@@ -909,7 +909,7 @@ Transform:
   - {fileID: 4606386574723897905}
   - {fileID: 8608192095173109400}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &255301927
 GameObject:
@@ -1794,7 +1794,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 500821660}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.4406, y: -0.001, z: 0}
+  m_LocalPosition: {x: 0.926, y: -0.032, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 416011750}
@@ -1895,7 +1895,7 @@ Transform:
   m_LocalScale: {x: 13.129079, y: 12.295804, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &538480664
 Animator:
@@ -2107,10 +2107,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToPool:
+  - {fileID: 4774467930246128496, guid: 72e69191e6bfe4a408737ed9721629f9, type: 3}
   - {fileID: 4774467930246128496, guid: 7e3d8e3ddcabfe748b876dac84624362, type: 3}
-  - {fileID: 7294032747183786748, guid: fbacb0116912a1043985209581a1a42f, type: 3}
-  - {fileID: 8893109096578724018, guid: 89f4e1d52e16c1f4aab4e8941a4dc389, type: 3}
-  - {fileID: 4015869921192101081, guid: 37e5007ab12ea3c43a664e366ccf0ed8, type: 3}
+  - {fileID: 7239614934739811155, guid: 622d3208a36858e4bb64a551f646971a, type: 3}
+  - {fileID: 7932431480939076439, guid: 46da3034ca7ff9b448ef76417128d138, type: 3}
   amount: 200
 --- !u!4 &656522689
 Transform:
@@ -7602,6 +7602,7 @@ GameObject:
   - component: {fileID: 5418351425541095801}
   - component: {fileID: 5418351425541095802}
   - component: {fileID: 5418351425541095797}
+  - component: {fileID: 5418351425541095803}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -7729,10 +7730,10 @@ MonoBehaviour:
   playerRigidBody: {fileID: 5418351425541095798}
   canWalk: 1
   canJump: 1
-  canGlide: 1
-  canWallJump: 1
-  canDash: 1
-  JumpKey: 119
+  canGlide: 0
+  canWallJump: 0
+  canDash: 0
+  JumpKey: 32
   GlideKey: 120
   DashKey: 304
   groundCheck: {fileID: 1702939481}
@@ -7749,7 +7750,6 @@ MonoBehaviour:
   moveSpeed: 2
   PlayerWalk: {fileID: 5418351425541095802}
   playerJumpForce: 8
-  Jump: {fileID: 5418351425541095802}
   jumpSound: {fileID: 6458301533760958022}
   extraJumps: 1
   GlideForce: 5
@@ -7775,6 +7775,113 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!96 &5418351425541095803
+TrailRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5418351425541095796}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 3
+  m_Time: 1
+  m_Parameters:
+    serializedVersion: 3
+    widthMultiplier: 1
+    widthCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0.13450241
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.71466064
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    colorGradient:
+      serializedVersion: 2
+      key0: {r: 1, g: 1, b: 1, a: 1}
+      key1: {r: 1, g: 1, b: 1, a: 1}
+      key2: {r: 1, g: 0.9945946, b: 0, a: 0.03529412}
+      key3: {r: 1, g: 0.99265325, b: 0, a: 0}
+      key4: {r: 0, g: 0, b: 0, a: 0}
+      key5: {r: 0, g: 0, b: 0, a: 0}
+      key6: {r: 0, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 0
+      ctime1: 15998
+      ctime2: 47609
+      ctime3: 65535
+      ctime4: 0
+      ctime5: 0
+      ctime6: 0
+      ctime7: 0
+      atime0: 0
+      atime1: 15998
+      atime2: 65535
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 0
+      m_NumColorKeys: 2
+      m_NumAlphaKeys: 3
+    numCornerVertices: 0
+    numCapVertices: 0
+    alignment: 0
+    textureMode: 0
+    shadowBias: 0.5
+    generateLightingData: 0
+  m_MinVertexDistance: 0.1
+  m_Autodestruct: 0
+  m_Emitting: 1
 --- !u!1001 &5653521171089163487
 PrefabInstance:
   m_ObjectHideFlags: 0

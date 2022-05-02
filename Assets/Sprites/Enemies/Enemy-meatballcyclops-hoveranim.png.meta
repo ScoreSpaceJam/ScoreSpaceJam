@@ -1,16 +1,19 @@
 fileFormatVersion: 2
-guid: fad5ee42e75ec894c9a35899f4412c55
+guid: 79138a2a1263ee44796417fd84f81ef5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7881166437498641139
-    second: creature_0
+      213: -3345423749596484198
+    second: Enemy-meatballcyclops-hoveranim_0
   - first:
-      213: 1774670244066423689
-    second: creature_1
+      213: -4839503458690585321
+    second: Enemy-meatballcyclops-hoveranim_1
   - first:
-      213: -3844660873173013071
-    second: creature_2
+      213: -2140351081358589327
+    second: Enemy-meatballcyclops-hoveranim_2
+  - first:
+      213: -4302407254648222527
+    second: Enemy-meatballcyclops-hoveranim_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -100,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: creature_0
+      name: Enemy-meatballcyclops-hoveranim_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 4
         y: 0
-        width: 15
-        height: 16
+        width: 24
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,20 +117,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3fa56d26e178f5d60800000000000000
-      internalID: 7881166437498641139
+      spriteID: a9d652613daa291d0800000000000000
+      internalID: -3345423749596484198
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: creature_1
+      name: Enemy-meatballcyclops-hoveranim_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 36
         y: 1
-        width: 15
-        height: 13
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -135,20 +138,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 983f8033f25e0a810800000000000000
-      internalID: 1774670244066423689
+      spriteID: 71d297fbe31a6dcb0800000000000000
+      internalID: -4839503458690585321
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: creature_2
+      name: Enemy-meatballcyclops-hoveranim_2
       rect:
         serializedVersion: 2
-        x: 16
-        y: 1
-        width: 16
-        height: 15
+        x: 68
+        y: 2
+        width: 24
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,8 +159,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1bdeda44e4505aac0800000000000000
-      internalID: -3844660873173013071
+      spriteID: 1728ff41802fb42e0800000000000000
+      internalID: -2140351081358589327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy-meatballcyclops-hoveranim_3
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 1
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cc01a3a567ca44c0800000000000000
+      internalID: -4302407254648222527
       vertices: []
       indices: 
       edges: []
