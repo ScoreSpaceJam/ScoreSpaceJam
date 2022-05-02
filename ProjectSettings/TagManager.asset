@@ -8,6 +8,7 @@ TagManager:
   - Tower
   - TowerHolder
   - Bullet
+  - Music
   layers:
   - Default
   - TransparentFX
