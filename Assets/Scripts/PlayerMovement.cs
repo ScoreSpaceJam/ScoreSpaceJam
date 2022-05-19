@@ -38,25 +38,25 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     bool canJump;
 
-    [SerializeField]
-    bool canGlide;
+  //  [SerializeField]
+  //  bool canGlide;
 
-    [SerializeField]
-    bool canWallJump;
+  //  [SerializeField]
+  //  bool canWallJump;
 
-    [SerializeField]
-    bool canDash;
+  //  [SerializeField]
+  //  bool canDash;
 
     [Header("Key Codes")]
 
     [SerializeField]
     KeyCode JumpKey;
 
-    [SerializeField]
-    KeyCode GlideKey;
+   // [SerializeField]
+ //   KeyCode GlideKey;
 
-    [SerializeField]
-    KeyCode DashKey;
+   // [SerializeField]
+  //  KeyCode DashKey;
 
     [Header("Ground Check Components Settings")]
 
@@ -101,19 +101,19 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     int extraJumps;
 
-    [Header("Player Glide Settings")]
+ //   [Header("Player Glide Settings")]
 
-    [SerializeField] float GlideForce;
-    [SerializeField] float StartGlideTime;
+ //   [SerializeField] float GlideForce;
+//    [SerializeField] float StartGlideTime;
 
-    [Header("Player Dash Settings")]
-    [SerializeField]
-    float dashPower = 14f;
+  //  [Header("Player Dash Settings")]
+ //   [SerializeField]
+ //   float dashPower = 14f;
 
     //public Animator dash;
 
-    [SerializeField]
-    float dashTime = 0.5f;
+ //   [SerializeField]
+//    float dashTime = 0.5f;
 
     #endregion
 
@@ -215,14 +215,14 @@ public class PlayerMovement : MonoBehaviour
             playerRigidBody.velocity = playerJumpForce * Vector2.up;
             jumps = 1;
             jumpSound.Play();
-            Debug.Log("Jump");
+            //Debug.Log("Jump");
             
         }
     }
 
     #endregion
 
-    #region Wall Mechanics
+  /*  #region Wall Mechanics
 
     void WallJumpMechanism()
     {
@@ -232,7 +232,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    #endregion
+    #endregion */
 
     #region Flip Mechanics
 
@@ -246,7 +246,7 @@ public class PlayerMovement : MonoBehaviour
 
     #endregion
 
-    #region Glide Mechanics
+   /* #region Glide Mechanics
 
     void GlideMechanics()
     {
@@ -280,9 +280,9 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    #endregion
+    #endregion */
 
-    #region Dash Mechanism
+   /* #region Dash Mechanism
 
     void DashMechanism()
     {
@@ -306,7 +306,7 @@ public class PlayerMovement : MonoBehaviour
         moveSpeed = baseSpeed;
     }
 
-    #endregion
+    #endregion */
 
-    #endregion
+    #endregion 
 }

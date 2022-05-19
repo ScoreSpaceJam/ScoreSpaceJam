@@ -56,7 +56,7 @@ public class Health : MonoBehaviour
     {
         healthBarImage.fillAmount = currentHealth / maxHealth;
         CheckDeath();
-        DebugScore();
+       // DebugScore();
 
         score.text = currentScore.ToString();
     }
