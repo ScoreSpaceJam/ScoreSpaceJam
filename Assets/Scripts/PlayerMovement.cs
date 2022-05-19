@@ -30,6 +30,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     Rigidbody2D playerRigidBody;
 
+    [SerializeField]
+    GameObject weapon;
+
     [Header("Can Player")]
 
     [SerializeField]
@@ -242,6 +245,7 @@ public class PlayerMovement : MonoBehaviour
         Vector3 scalar = transform.localScale;
         scalar.x *= -1;
         transform.localScale = scalar;
+        weapon.transform.localScale *= -1;
     }
 
     #endregion

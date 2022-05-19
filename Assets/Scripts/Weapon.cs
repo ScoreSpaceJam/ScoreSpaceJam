@@ -11,6 +11,8 @@ public class Weapon : MonoBehaviour
    
     private float timeBtwShots;
     public float startTimeBtwShots;
+
+    [SerializeField] GameObject Player;
     private void Update()
     {
         Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
