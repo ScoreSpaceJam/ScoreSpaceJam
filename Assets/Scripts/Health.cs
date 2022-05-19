@@ -15,6 +15,7 @@ public class Health : MonoBehaviour
     Animator anim;
 
     bool canShowHighScore = false;
+    bool canRestart = false;
 
     bool isDead = false;
     public float currentScore = 0;
@@ -91,6 +92,7 @@ public class Health : MonoBehaviour
                 Time.timeScale = 0;
                 HighscorePanel.SetActive(true);
                 scoreManager.AddScore(new Score(PlayerPrefs.GetString("name"), currentScore));
+                canRestart = true;
                 canShowHighScore = false;
             }
         }
@@ -109,7 +111,11 @@ public class Health : MonoBehaviour
             HighscorePanel.SetActive(true);
             scoreManager.AddScore(new Score(PlayerPrefs.GetString("name"), currentScore));*/
         }
-        else if(isDead && Input.GetKeyDown(KeyCode.R) && !Input.GetKeyDown(KeyCode.Escape) && canShowHighScore)
+        /*else if(isDead && Input.GetKeyDown(KeyCode.R) && !Input.GetKeyDown(KeyCode.Escape) && canShowHighScore)
+        {
+            SceneManager.LoadScene(1);
+        }*/
+        else if(isDead && Input.GetKeyDown(KeyCode.R) && canRestart)
         {
             SceneManager.LoadScene(1);
         }

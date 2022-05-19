@@ -7201,7 +7201,7 @@ MonoBehaviour:
   score: {fileID: 1062632903}
   SpawnerGameObject: {fileID: 979996243}
   currentHealth: 0
-  maxHealth: 100
+  maxHealth: 50
 --- !u!82 &1902023002
 AudioSource:
   m_ObjectHideFlags: 0
