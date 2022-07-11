@@ -54,6 +54,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -277,6 +278,14 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Tower-Idle-spritesheet_4: -7601717719038721913
+      Tower-Idle-spritesheet_2: 5308668580115103062
+      Tower-Idle-spritesheet_5: -1581102701933313117
+      Tower-Idle-spritesheet_6: 9119837058365778571
+      Tower-Idle-spritesheet_1: -8795461962926705182
+      Tower-Idle-spritesheet_3: 6523758796557578818
+      Tower-Idle-spritesheet_0: 1799673227599342826
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

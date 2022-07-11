@@ -36,6 +36,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -196,6 +197,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Enemy-meatballcyclops-hoveranim_0: -3345423749596484198
+      Enemy-meatballcyclops-hoveranim_3: -4302407254648222527
+      Enemy-meatballcyclops-hoveranim_1: -4839503458690585321
+      Enemy-meatballcyclops-hoveranim_2: -2140351081358589327
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -48,6 +48,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -292,6 +293,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Tower-death-spritesheet_3: -2320465823408787747
+      Tower-death-spritesheet_5: 173982617532592244
+      Tower-death-spritesheet_6: -1762314501373297804
+      Tower-death-spritesheet_7: -1271721481483263990
+      Tower-death-spritesheet_4: 3921377601833699054
+      Tower-death-spritesheet_1: -764178320711837389
+      Tower-death-spritesheet_0: -2846160723639577581
+      Tower-death-spritesheet_2: 5995159270306715801
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

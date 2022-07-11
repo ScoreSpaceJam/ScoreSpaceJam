@@ -39,6 +39,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -220,6 +221,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Tower-damaged-spritesheet_2: -5515437953572585823
+      Tower-damaged-spritesheet_0: -202452829557669152
+      Tower-damaged-spritesheet_4: 1913489906353640207
+      Tower-damaged-spritesheet_3: 1151129736353799652
+      Tower-damaged-spritesheet_1: -6407788342041811897
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

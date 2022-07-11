@@ -198,6 +198,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -1492,6 +1493,65 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      gunslinger-character-spritesheet_53: 3645493244104766851
+      gunslinger-character-spritesheet_55: -6205470487551142721
+      gunslinger-character-spritesheet_45: 4273954455566958996
+      gunslinger-character-spritesheet_10: -3789806491060608771
+      gunslinger-character-spritesheet_54: 6459142111118056626
+      gunslinger-character-spritesheet_57: 6839056287758156575
+      gunslinger-character-spritesheet_52: -5362999621303006155
+      gunslinger-character-spritesheet_24: 4384285469998659358
+      gunslinger-character-spritesheet_26: -1561746447816249180
+      gunslinger-character-spritesheet_13: 9060085313907869132
+      gunslinger-character-spritesheet_48: -7535890679861072513
+      gunslinger-character-spritesheet_4: -4809073502114068931
+      gunslinger-character-spritesheet_23: 3008436229741122206
+      gunslinger-character-spritesheet_6: 19709463310867251
+      gunslinger-character-spritesheet_34: 2864152839241227776
+      gunslinger-character-spritesheet_5: 7434144056263727412
+      gunslinger-character-spritesheet_27: -4036668457554548121
+      gunslinger-character-spritesheet_30: 3582921506250186612
+      gunslinger-character-spritesheet_12: 4687962655461605721
+      gunslinger-character-spritesheet_14: 1710612219509656441
+      gunslinger-character-spritesheet_11: 2845112669894161334
+      gunslinger-character-spritesheet_46: -6584951093324899540
+      gunslinger-character-spritesheet_35: 8810566035668685657
+      gunslinger-character-spritesheet_19: -2455390827069850589
+      gunslinger-character-spritesheet_39: 8271217780825712383
+      gunslinger-character-spritesheet_37: 1807810245865411337
+      gunslinger-character-spritesheet_29: -1721788449724513785
+      gunslinger-character-spritesheet_47: -7100335289294027127
+      gunslinger-character-spritesheet_25: 4256207403942289289
+      gunslinger-character-spritesheet_1: -2833183905428626669
+      gunslinger-character-spritesheet_51: 8539851799945604535
+      gunslinger-character-spritesheet_43: -3193957962151042406
+      gunslinger-character-spritesheet_17: 2170492830128550483
+      gunslinger-character-spritesheet_36: 5253948784374618109
+      gunslinger-character-spritesheet_3: -3101214170474942793
+      gunslinger-character-spritesheet_41: 2246170789542717869
+      gunslinger-character-spritesheet_44: 3013839743989769987
+      gunslinger-character-spritesheet_8: -105210299483969505
+      gunslinger-character-spritesheet_56: 827284620440161882
+      gunslinger-character-spritesheet_31: 1400197205316135661
+      gunslinger-character-spritesheet_7: 690467611886861495
+      gunslinger-character-spritesheet_15: -3931017859639903591
+      gunslinger-character-spritesheet_0: 6577644830512200398
+      gunslinger-character-spritesheet_20: -931392102586391078
+      gunslinger-character-spritesheet_22: 6019741387019931546
+      gunslinger-character-spritesheet_38: -8386776312217055710
+      gunslinger-character-spritesheet_49: -8541041149306324959
+      gunslinger-character-spritesheet_16: -741112612111496046
+      gunslinger-character-spritesheet_33: -5620776522667800956
+      gunslinger-character-spritesheet_42: 5791310918024138581
+      gunslinger-character-spritesheet_40: -5483398801939075383
+      gunslinger-character-spritesheet_2: -7017696024976008159
+      gunslinger-character-spritesheet_21: -4012740289226219302
+      gunslinger-character-spritesheet_9: -8143749991587572365
+      gunslinger-character-spritesheet_32: -8185067802454912069
+      gunslinger-character-spritesheet_50: -8541026738839687473
+      gunslinger-character-spritesheet_18: -8473634022955954096
+      gunslinger-character-spritesheet_28: 717292042118867370
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

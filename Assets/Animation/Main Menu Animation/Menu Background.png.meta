@@ -99,6 +99,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -712,6 +713,32 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Menu Background_21: 7443559158870223802
+      Menu Background_14: 973669599818173938
+      Menu Background_2: -5942561062527560100
+      Menu Background_22: 7784082149288755857
+      Menu Background_12: 4307516760079560981
+      Menu Background_16: 9131695443006115295
+      Menu Background_5: -4224580981689990156
+      Menu Background_10: -3711050338470829173
+      Menu Background_9: -6788963595307499113
+      Menu Background_6: 2194927863567149611
+      Menu Background_13: -4391876419662634622
+      Menu Background_23: 2181035442768219742
+      Menu Background_3: 3923231759164313839
+      Menu Background_19: -7984630674338812825
+      Menu Background_15: -8219181926323238274
+      Menu Background_8: -4572375903865101197
+      Menu Background_18: 7351292945115914842
+      Menu Background_17: 7004532658185869231
+      Menu Background_11: -8174913546326877008
+      Menu Background_24: 6815561015734083238
+      Menu Background_0: -7020922751645015488
+      Menu Background_7: 2369110327445583421
+      Menu Background_1: 7966612291321987950
+      Menu Background_20: -1570968588152871497
+      Menu Background_4: 4005357068912036034
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
